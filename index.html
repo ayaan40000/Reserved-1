@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reliable Car Under $12K — Houston Dashboard (Oct 26, 2026)</title>
+<style>
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#f6f7f9;color:#17202a;line-height:1.45}
+header{background:#123524;color:#fff;padding:20px 16px}header h1{margin:0 0 6px;font-size:24px}header p{margin:4px 0;max-width:900px}
+.stamp{background:#fff3cd;border:2px solid #b58900;padding:10px 14px;font-weight:600}
+main{max-width:1100px;margin:0 auto;padding:14px}
+.tabs{display:flex;gap:8px;margin:12px 0}.tabs button,.filters button{padding:10px 14px;border-radius:8px;border:1px solid #888;background:#fff;cursor:pointer;font-size:15px}
+.tabs button.active{background:#123524;color:#fff}
+.filters{background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.filters label{font-size:13px;font-weight:600;display:block}.filters input,.filters select{width:100%;padding:8px;margin-top:4px}
+.checks{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}.checks label{font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:14px}
+.card{background:#fff;border:1px solid #ddd;border-radius:10px;padding:14px}.card h3{margin:0 0 6px;font-size:17px}
+.price{font-size:20px;font-weight:700}.muted{color:#5d6d7e;font-size:13px}.small{font-size:14px}
+.tag{display:inline-block;padding:2px 8px;border-radius:99px;background:#eaf2f8;font-size:12px;font-weight:700}
+.hyb{background:#d5f5e3}.meets{background:#145a32;color:#fff;padding:3px 8px;border-radius:6px;font-weight:700;font-size:13px}
+.badge-pursue{background:#145a32;color:#fff}.badge-caution{background:#f9e79f}.badge-avoid{background:#922b21;color:#fff}
+.deal{color:#7d6608;font-weight:700}.mismatch{display:block;background:#fadbd8;padding:4px 6px;border-radius:6px;font-weight:600}
+section.help{background:#fff;border:1px solid #ddd;border-radius:10px;padding:16px;margin-top:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccc;padding:6px;text-align:left;vertical-align:top}
+footer{padding:18px;color:#555;font-size:13px;text-align:center}a{color:#1a5276}
+</style></head><body>
+<header><h1>Reliable car under $12,000 — Houston</h1>
+<p>Cash, sedan, under 75,000 miles, factory Android Auto + reverse camera required. Hybrid and lane assist preferred.</p>
+<p><b>Honest headline:</b> Only 1 of these 32 cars meets ALL must-haves — the 2019 Kia Forte FE in Spring ($7,000, 44,500 mi). It is a <b>manual transmission</b> car. Everything else misses for a stated reason: tap “Full sweep notes” on a card.</p></header>
+<div class="stamp">Listings from Facebook Marketplace sweep, Oct 26, 2026 — listings sell fast; a car shown here may already be gone.</div>
+<main>
+<nav class="tabs"><button id="tabList" class="active" onclick="showTab('list')">Listings (32)</button><button id="tabFaq" onclick="showTab('faq')">FAQ &amp; Help</button></nav>
+
+<div id="view-list">
+<div class="filters" id="filters">
+<div><label>Max price ($) <input type="number" id="fPrice" placeholder="12000"></label></div>
+<div><label>Max mileage <input type="number" id="fMiles" placeholder="75000"></label></div>
+<div><label>Model <select id="fModel"><option value="">All models</option><option value="Chevrolet Malibu">Chevrolet Malibu</option><option value="Ford Fusion">Ford Fusion</option><option value="Honda Accord">Honda Accord</option><option value="Honda Civic">Honda Civic</option><option value="Hyundai Elantra">Hyundai Elantra</option><option value="Hyundai Sonata">Hyundai Sonata</option><option value="Kia Forte">Kia Forte</option><option value="Kia Optima">Kia Optima</option><option value="Mazda Mazda6">Mazda Mazda6</option><option value="Subaru Legacy">Subaru Legacy</option></select></label></div>
+<div><label>Sort by <select id="fSort"><option value="">Default (pref score)</option><option value="price">Price, low first</option><option value="miles">Mileage, low first</option><option value="discount">Discount %, high first</option><option value="pref">Pref score, high first</option></select></label></div>
+<div class="checks">
+<label><input type="checkbox" id="fHybrid"> Hybrid only</label>
+<label><input type="checkbox" id="fAA"> Android Auto confirmed by matrix</label>
+<label><input type="checkbox" id="fMeets"> Meets all criteria only</label>
+<label><input type="checkbox" id="fDeal"> Underpriced (deal flag) only</label>
+</div>
+<p class="small muted" style="grid-column:1/-1">“Underpriced” = asking price at least 10% below the market estimate vs. comparable Marketplace asking prices seen in the Oct 26 sweep. A discount can also be a warning (rebuilt title, bad miles) — read the card. Android Auto on every card is the expert matrix verdict for that year/trim, not the seller’s claim. No photos are embedded: the sweep records carried no photo URLs.</p>
+</div>
+<p id="count" class="small"></p>
+<div class="grid" id="grid"><article class="card" data-price="7000" data-miles="44500" data-model="Kia Forte" data-hybrid="false" data-aa="confirmed" data-meets="true" data-deal="true" data-pref="5" data-discount="33.3">
+<h3>2019 Kia Forte FE Sedan 4D</h3>
+<p class="price">$7,000 <span class="muted">· 44,500 mi · Spring, TX</span></p>
+<p><span class='meets'>✓ MEETS ALL MUST-HAVES</span>  <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Tier 1 pick: 2019 Forte, AA + lane-keeping standard, simple 2.0L</p>
+<p class="small"><b>Miss / note:</b> ✓ Meets all must-haves — MANUAL transmission</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Forte: all trims incl. FE<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 3.5/5 · Pref score: 5/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 33.3% below market est. $10,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: José Luis Loras (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1098691249230221/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">MEETS all must-haves. Clean title seller-stated. MANUAL transmission (listing states manual) — buyer must accept a manual; not excluded by spec but flag prominently. Android Auto, backup camera and lane-keeping are factory standard on all 2019 Forte trims including FE (inference, not seller-stated; seller stated only clean title, good engine/transmission/AC, tires 90%). Market estimate $10,500 based on comparables seen this sweep: 2020 Forte LXS Tomball $8,900, 2021 Forte S Houston $9,800, 2022 Forte FE Katy $9,500 — a 44.5k-mile 2019 at $7,000 is well below that band. Reliability 3.5 and pref components per Sep 28 Forte family values/spec weights (lane +2, reliability +1, 2019 +1, under 50k +1).</p></details>
+</article>
+<article class="card" data-price="5900" data-miles="55000" data-model="Ford Fusion" data-hybrid="false" data-aa="conditional" data-meets="false" data-deal="true" data-pref="1" data-discount="37.9">
+<h3>2018 Ford Fusion Not stated</h3>
+<p class="price">$5,900 <span class="muted">· 55,000 mi · Richmond, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Top verify candidate — price/miles pass, but trim, engine and AA unconfirmed</p>
+<p class="small"><b>Miss / note:</b> AA unconfirmed (trim not stated)</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: trim not stated; only SYNC 3 (8″) cars have AA<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3.5/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 37.9% below market est. $9,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Sandoval Fernando (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1103093259359456/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">TOP VERIFY CANDIDATE — price, miles and body style all pass, clean title seller-stated, 1 owner, &#x27;clear history&#x27; on listing. Does NOT get meets_criteria=true because Android Auto and backup camera are NOT stated in the listing and the trim is not stated, so factory Android Auto cannot be confirmed for year/trim (same rule as Sep 28). If it is a SYNC 3 car it likely meets everything. Engine not stated — prefer 2.5L, avoid 1.5T per spec research. Market estimate $9,500 from comparables seen this sweep: 2019 Fusion SE 80.9k mi $10,995, 2017 Fusion Sport 82k mi $9,250, 2019 Fusion S $6,500 (outlier, see separate record). Reliability 3.5 = Sep 28 Fusion gasoline family value.</p></details>
+</article>
+<article class="card" data-price="6500" data-miles="12400" data-model="Ford Fusion" data-hybrid="false" data-aa="conditional" data-meets="false" data-deal="true" data-pref="2" data-discount="40.9">
+<h3>2019 Ford Fusion S Sedan 4D</h3>
+<p class="price">$6,500 <span class="muted">· 12,400 mi · Tomball, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Verify the screen — plus implausibly low 12,400 mi: verify odometer/VIN first</p>
+<p class="small"><b>Miss / note:</b> Matrix: possible with SYNC 3 vs listing inference &#x27;no AA&#x27; • suspiciously low miles</p>
+<p class="small"><b>Android Auto:</b> AA conditional: 2019 Fusion S has AA ONLY if this car has the 8″ SYNC 3 screen<br><span class='mismatch'>⚠ Seller/matrix mismatch — trust the matrix, plug-test the car</span></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3.5/5 · Pref score: 2/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 40.9% below market est. $11,000</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Anely Lugo (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1617407809852759/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Fails Android Auto must-have: base S trim uses SYNC (not SYNC 3), so factory Android Auto is not plausible as standard equipment (factory-spec inference). Reverse camera true by 2019 factory standard (inference, not seller-stated). RED FLAG: only 12,400 miles stated for a 2019 at $6,500 with a two-word description (&#x27;Buenas condiciones&#x27;) — implausibly low; verify odometer, title and VIN history before any interest. 1 owner stated. Market estimate $11,000 is the clean, verified-miles value for a 2019 Fusion under 50k mi based on this sweep&#x27;s Fusion band; discount is therefore not trustworthy until mileage is verified. Reliability 3.5 = Sep 28 Fusion gasoline family.</p></details>
+</article>
+<article class="card" data-price="10200" data-miles="78000" data-model="Honda Accord" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="4" data-discount="18.4">
+<h3>2019 Honda Accord Sport Sedan 4D</h3>
+<p class="price">$10,200 <span class="muted">· 78,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> 1.5T engine: oil dilution (fuel thins the oil) — expert says avoid; 2.4L is the pick</p>
+<p class="small"><b>Miss / note:</b> 3,000 mi over 75k cap • 1.5T avoid-list engine</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Accord Sport (8″ Display Audio)<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 4/5 · Pref score: 4/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 18.4% below market est. $12,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Randyy P Hernandez (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1832504861533211/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Near miss: 78,000 mi is 3,000 over the 75k cap. Sparse description (&#x27;in very good condition&#x27;), no title statement. 2019 Accord Sport: Android Auto, backup camera and Honda Sensing lane-keeping are factory standard (inference). Sport = 1.5T engine (not the preferred 2.4L; fuel-dilution watch from Sep 28 research). Market estimate $12,500 from this sweep&#x27;s Accord band (2019 Sport Fresno $12,800 at 56.7k mi rebuilt; 2020 LX $13,499 at 77k mi). Reliability 4 = grounded estimate for the 1.5T powertrain, below the 2.4L Accord&#x27;s Sep 28 score of 5.</p></details>
+</article>
+<article class="card" data-price="10995" data-miles="80900" data-model="Ford Fusion" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="3" data-discount="-4.7">
+<h3>2019 Ford Fusion SE Sedan 4D</h3>
+<p class="price">$10,995 <span class="muted">· 80,900 mi · Richmond, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> 1.5L EcoBoost: coolant can leak into cylinders → engine replacement</p>
+<p class="small"><b>Miss / note:</b> 5,900 mi over cap • 1.5 EcoBoost avoid-list engine</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Fusion SE: SYNC 3 standard<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 3.5/5 · Pref score: 3/10</p>
+<p class="small"><span class='muted'>Market est. $10,500 (-4.7%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Kyle Johnny (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1225175709823601/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Near miss: 80,900 mi is 5,900 over cap. Clean title in hand seller-stated, 2nd/longest owner, detailed maintenance list. Backup camera and lane keeping both seller-stated; Android Auto true by 2019 SE SYNC 3 factory fit (inference, Sep 28 pattern). Engine is the 1.5L EcoBoost — spec research says prefer the 2.5L and avoid the 1.5T, so this is a double caution despite the good spec. Market estimate $10,500 from this sweep&#x27;s 2019 Fusion band; asking is slightly above it. Reliability 3.5 = Sep 28 Fusion gasoline family.</p></details>
+</article>
+<article class="card" data-price="9500" data-miles="89500" data-model="Hyundai Elantra" data-hybrid="false" data-aa="conditional" data-meets="false" data-deal="false" data-pref="2" data-discount="6.9">
+<h3>2019 Hyundai Elantra SE Value Edition Sedan 4D</h3>
+<p class="price">$9,500 <span class="muted">· 89,500 mi · Richmond, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Elantra is a value pick, but 2019 2.0L needs piston-ring recall 21V-301 proof</p>
+<p class="small"><b>Miss / note:</b> 14,500 mi over cap • recall proof needed • trim ambiguous</p>
+<p class="small"><b>Android Auto:</b> AA likely but trim is ambiguous (SE Value / SEL / Limited stated) — plug-test it<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 2/10</p>
+<p class="small"><span class='muted'>Market est. $10,200 (6.9%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Ahmet Önal (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1436157315369577/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Near miss: 89,500 mi is 14,500 over cap. Clean title seller-stated. Android Auto AND backup camera both explicitly seller-stated in a detailed feature list. Listing title says SE Value Edition; description also says &#x27;SEL / Value / Limited (as listed by insurance)&#x27; — trim ambiguity to verify. Market estimate $10,200 from this sweep&#x27;s Elantra band (2019 SEL Sugar Land $8,500 at 84k mi; 2019 Limited Conroe $15,353 dealer). Reliability 3 = Sep 28 Elantra family value.</p></details>
+</article>
+<article class="card" data-price="8500" data-miles="84000" data-model="Hyundai Elantra" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="2" data-discount="19.0">
+<h3>2019 Hyundai Elantra SEL Sedan 4D</h3>
+<p class="price">$8,500 <span class="muted">· 84,000 mi · Sugar Land, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Good model, no seller description at all — verify everything in person</p>
+<p class="small"><b>Miss / note:</b> 9,000 mi over cap • seller stated nothing (matrix says SEL should have AA)</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Elantra SEL and above have AA standard<br><span class='mismatch'>⚠ Seller/matrix mismatch — trust the matrix, plug-test the car</span></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3/5 · Pref score: 2/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 19.0% below market est. $10,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Rabih Atwe (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/3659678000856993/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Near miss: 84,000 mi is 9,000 over cap. NO seller description at all — no title, Android Auto or camera statement, so all feature fields are null (never invent). Market estimate $10,500 from this sweep&#x27;s Elantra band (2019 Value Edition Richmond $9,500 at 89.5k mi with AA/camera stated; 2019 Limited Houston $5,800 at 160k mi). Reliability 3 = Sep 28 Elantra family value.</p></details>
+</article>
+<article class="card" data-price="9850" data-miles="108000" data-model="Honda Accord" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="3" data-discount="6.2">
+<h3>2017 Honda Accord EX Sedan 4D</h3>
+<p class="price">$9,850 <span class="muted">· 108,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Tier 1: 2.4L EX — the reliable Accord to buy, AA standard on EX+</p>
+<p class="small"><b>Miss / note:</b> 33,000 mi over cap</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2017 Accord EX and above<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 5/5 · Pref score: 3/10</p>
+<p class="small"><span class='muted'>Market est. $10,500 (6.2%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Adian Charles (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1353387450022171/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">108k mi — 33k over cap. Title says EX, description says EX-L; backup camera seller-stated, plus leather heated seats, sunroof, push-button start, 1 owner, paid off. Android Auto true by factory fit on 2017 Accord EX-and-above (inference, Sep 28 pattern). No title-status statement. Market estimate $10,500, consistent with Sep 28&#x27;s $10,800 estimate for a 109k-mi 2017 Accord Sport SE and this sweep&#x27;s Accord band. Reliability 5 = Sep 28 Accord 2.4L score.</p></details>
+</article>
+<article class="card" data-price="12800" data-miles="56665" data-model="Honda Accord" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="4" data-discount="11.7">
+<h3>2019 Honda Accord Sport Sedan 4D</h3>
+<p class="price">$12,800 <span class="muted">· 56,665 mi · Fresno, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Rebuilt title + 1.5T oil-dilution engine — walk away at this price</p>
+<p class="small"><b>Miss / note:</b> Over $12k • rebuilt title • 1.5T</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Accord Sport<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 4/5 · Pref score: 4/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 11.7% below market est. $14,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Andrew Morales (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1413543114232334/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Fails price ($12,800 over $12k) and has a REBUILT title — seller states passenger-side accident, repaired, with new brakes/rotors/struts/axle. Mileage 56,665 passes. Android Auto, camera and Honda Sensing lane-keeping are factory standard on 2019 Accord Sport (inference). 1.5T engine. Market estimate $14,500 is the CLEAN-title value for a 56k-mi 2019 Sport from this sweep&#x27;s band, so the apparent discount is the rebuilt-title discount, not a bargain. Reliability 4 = grounded estimate for 1.5T powertrain (2.4L Accord = 5 in Sep 28).</p></details>
+</article>
+<article class="card" data-price="10950" data-miles="98386" data-model="Ford Fusion" data-hybrid="true" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="8" data-discount="2.2">
+<h3>2019 Ford Fusion Hybrid SEL Sedan 4D</h3>
+<p class="price">$10,950 <span class="muted">· 98,386 mi · Richmond, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Tier 1 model: Fusion Hybrid eCVT is the best-fit target — this one is over miles; DUPLICATE of the Sugar Land listing (same car, count once)</p>
+<p class="small"><b>Miss / note:</b> 23,386 mi over cap • duplicate listing</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Fusion Hybrid SEL: SYNC 3 standard<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 4/5 · Pref score: 8/10</p>
+<p class="small"><span class='muted'>Market est. $11,200 (2.2%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Kadir Zora / Zora Motor Sales&amp;Service, Rosenberg TX (dealer, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1574102170674140/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">98,386 mi — 23k over cap. Dealer listing, generic description (&#x27;smartphone integration&#x27; stated; Android Auto, camera and lane-keeping true by 2019 Fusion Hybrid SEL factory fit, inference per Sep 28 pattern). DUPLICATE: same car (same 98,386 mi, red/tan) is listed again in Sugar Land by Zora Motors — see next record; count once as a candidate. Market estimate $11,200 from this sweep&#x27;s Fusion Hybrid band (2019 Titanium Hybrid $11,500 at 120k mi; 2019 Platinum Hybrid $9,500 at 118.5k mi). Reliability 4 and hybrid pref per Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="10950" data-miles="98386" data-model="Ford Fusion" data-hybrid="true" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="8" data-discount="2.2">
+<h3>2019 Ford Fusion Hybrid SEL Sedan 4D</h3>
+<p class="price">$10,950 <span class="muted">· 98,386 mi · Sugar Land, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Same car as the Richmond Zora listing — duplicate, do not double-count</p>
+<p class="small"><b>Miss / note:</b> 23,386 mi over cap • duplicate of record above</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Fusion Hybrid SEL: SYNC 3 standard<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 4/5 · Pref score: 8/10</p>
+<p class="small"><span class='muted'>Market est. $11,200 (2.2%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Ashley Zora / Zora Motors, Rosenberg TX (dealer, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1414588987501345/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">DUPLICATE listing of the Richmond Zora Fusion Hybrid SEL above — same car, same 98,386 miles. This version states clean title and a Carfax report available. 23k over mileage cap. Features by 2019 factory fit (inference). Recorded only to show the duplicate; do not double-count. Reliability 4 = Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="11500" data-miles="120000" data-model="Ford Fusion" data-hybrid="true" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="8" data-discount="-9.5">
+<h3>2019 Ford Fusion Hybrid Titanium</h3>
+<p class="price">$11,500 <span class="muted">· 120,000 mi · Houston, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Tier 1 model, honest listing — but high miles and priced above market estimate</p>
+<p class="small"><b>Miss / note:</b> 45,000 mi over cap • above market estimate</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Fusion Hybrid Titanium<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 4/5 · Pref score: 8/10</p>
+<p class="small"><span class='muted'>Market est. $10,500 (-9.5%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Pavel Savoska (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2878364125863245/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">120k mi — 45k over cap. Clean title in hand seller-stated, 2 owners, paid off, detailed honest description. Android Auto, camera and lane-keeping by 2019 Titanium factory fit (inference). Asking $11,500 is ABOVE the $10,500 market estimate for a 120k-mi 2019 Hybrid from this sweep&#x27;s band (Platinum Hybrid 118.5k mi at $9,500). Reliability 4 = Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="9500" data-miles="118508" data-model="Ford Fusion" data-hybrid="true" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="6" data-discount="5.0">
+<h3>2019 Ford Fusion Platinum Hybrid Sedan 4D</h3>
+<p class="price">$9,500 <span class="muted">· 118,508 mi · Houston, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-pursue">PURSUE</span></p>
+<p class="small"><b>Why:</b> Tier 1 hybrid model — well over miles and listed 13 weeks ago (stale)</p>
+<p class="small"><b>Miss / note:</b> 43,508 mi over cap • stale listing</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Fusion Platinum Hybrid: SYNC 3<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 4/5 · Pref score: 6/10</p>
+<p class="small"><span class='muted'>Market est. $10,000 (5.0%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Omar Alasadi (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2277123786372007/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">118,508 mi — well over cap. Sparse description (calls it &#x27;titanium&#x27;, title says Platinum Hybrid); no title statement. Android Auto true by 2019 Platinum SYNC 3 factory fit (inference). Listed 13 weeks ago — stale. Market estimate $10,000 from this sweep&#x27;s Fusion Hybrid band. Reliability 4 = Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="7900" data-miles="95231" data-model="Ford Fusion" data-hybrid="true" data-aa="conditional" data-meets="false" data-deal="false" data-pref="5" data-discount="3.7">
+<h3>2017 Ford Fusion Hybrid Sedan 4D</h3>
+<p class="price">$7,900 <span class="muted">· 95,231 mi · Houston, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Fusion Hybrid is Tier 1, but this listing proves nothing — verify SYNC 3</p>
+<p class="small"><b>Miss / note:</b> 20,231 mi over cap • AA unconfirmed</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: no trim/equipment stated; SYNC 3 cars only<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 4/5 · Pref score: 5/10</p>
+<p class="small"><span class='muted'>Market est. $8,200 (3.7%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Frank Markantonis (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1608543107547241/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">95,231 mi — 20k over cap. Clean Carfax and clean title seller-stated, 1 owner, paid off, cash only. No feature statements, so Android Auto/camera are null even though a 2017 Hybrid with SYNC 3 would have AA — trim/equipment not confirmed in listing. Market estimate $8,200 from this sweep&#x27;s Fusion Hybrid band. Reliability 4 = Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="7900" data-miles="123000" data-model="Ford Fusion" data-hybrid="true" data-aa="conditional" data-meets="false" data-deal="false" data-pref="3" data-discount="-5.3">
+<h3>2018 Ford Fusion Hybrid</h3>
+<p class="price">$7,900 <span class="muted">· 123,000 mi · Houston, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Verify SYNC 3 and hybrid health before any interest</p>
+<p class="small"><b>Miss / note:</b> 48,000 mi over cap • AA unconfirmed</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: no trim stated; SYNC 3 cars only<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 4/5 · Pref score: 3/10</p>
+<p class="small"><span class='muted'>Market est. $7,500 (-5.3%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Osama Ali (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1103507802014496/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">123k mi — well over cap. Clean title in hand seller-stated, &#x27;clear history&#x27; on listing. No trim or feature statements — Android Auto/camera null. Listed 9 weeks ago. Market estimate $7,500 for a 123k-mi 2018 Hybrid from this sweep&#x27;s band; asking is above it. Reliability 4 = Sep 28 Fusion Hybrid family.</p></details>
+</article>
+<article class="card" data-price="6000" data-miles="190000" data-model="Ford Fusion" data-hybrid="true" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="6" data-discount="7.7">
+<h3>2019 Ford Fusion Titanium Hybrid Sedan 4D</h3>
+<p class="price">$6,000 <span class="muted">· 190,000 mi · Tomball, TX</span></p>
+<p> <span class='tag hyb'>Hybrid</span> <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Rebuilt title at 190,000 miles — cheap for two disqualifying reasons</p>
+<p class="small"><b>Miss / note:</b> 115,000 mi over cap • rebuilt title</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — SYNC 3 stated, 2019 Titanium Hybrid<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 4/5 · Pref score: 6/10</p>
+<p class="small"><span class='muted'>Market est. $6,500 (7.7%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Ghislain Chatue Fotso (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2016182945936705/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">190k mi — far over cap, and REBUILT title seller-stated (&#x27;Rebuild tittle&#x27;). Backup camera and rear camera both seller-stated in a long equipment list; SYNC 3 stated, so Android Auto true by factory fit. Cheap because of miles + rebuilt title — not a deal. Market estimate $6,500 reflects rebuilt/high-mile value from this sweep&#x27;s band. Reliability 4 = Sep 28 Fusion Hybrid family (condition risk separate).</p></details>
+</article>
+<article class="card" data-price="9250" data-miles="82000" data-model="Ford Fusion" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="2" data-discount="11.9">
+<h3>2017 Ford Fusion Sport Sedan 4D</h3>
+<p class="price">$9,250 <span class="muted">· 82,000 mi · Katy, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> 2.7L twin-turbo V6, modified (intercooler/intake) — not a reliability buy</p>
+<p class="small"><b>Miss / note:</b> 7,000 mi over cap • modified performance engine</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — Fusion Sport: SYNC 3<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3.5/5 · Pref score: 2/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 11.9% below market est. $10,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Abdul Khoshnaw (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2176802242872785/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">82k mi — 7k over cap. Performance model: 2.7L twin-turbo V6 AWD with aftermarket intercooler/intake/wheels — NOT a target engine (spec prefers the 2.5L; this is a modified performance car). &#x27;Clear history&#x27; on listing, paid off. Android Auto true by Sport SYNC 3 factory fit (inference). Market estimate $10,500 from this sweep&#x27;s Fusion band. Reliability 3.5 = Sep 28 Fusion gasoline family, before any modification risk.</p></details>
+</article>
+<article class="card" data-price="16849" data-miles="80982" data-model="Honda Accord" data-hybrid="false" data-aa="none" data-meets="false" data-deal="false" data-pref="3" data-discount="-34.8">
+<h3>2017 Honda Accord LX</h3>
+<p class="price">$16,849 <span class="muted">· 80,982 mi · Conroe, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> 2.4L engine is reliable, but LX fails the AA must-have and price is ~35% over market</p>
+<p class="small"><b>Miss / note:</b> Over $12k &amp; over miles • no AA</p>
+<p class="small"><b>Android Auto:</b> No AA by matrix — 2017 Accord LX has no factory Android Auto<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 5/5 · Pref score: 3/10</p>
+<p class="small"><span class='muted'>Market est. $12,500 (-34.8%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Santiago Alvarado (dealer-style seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1036911039194821/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Fails price badly ($16,849 vs $12k cap) and mileage (80,982). Dealer-style listing. 2017 Accord LX has no factory Android Auto (LX lacks the Display Audio unit — factory-spec inference), backup camera is standard on all 2017 Accords (inference). Market estimate $12,500 for an 81k-mi 2017 LX from this sweep&#x27;s Accord band — asking is ~35% above market. Reliability 5 = Sep 28 Accord 2.4L score.</p></details>
+</article>
+<article class="card" data-price="15911" data-miles="140000" data-model="Honda Civic" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="4" data-discount="-38.4">
+<h3>2019 Honda Civic EX-L Sedan</h3>
+<p class="price">$15,911 <span class="muted">· 140,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> 1.5T oil-dilution engine — expert says pick the 2.0L instead</p>
+<p class="small"><b>Miss / note:</b> Over $12k • 65,000 mi over cap • 1.5T</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Civic EX-L<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Yes · Reliability: 3/5 · Pref score: 4/10</p>
+<p class="small"><span class='muted'>Market est. $11,500 (-38.4%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Nathan Avery (dealer, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1108256534871610/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Fails price ($15,911) and mileage (140k). Dealer listing, clean title and clean Carfax stated, backup camera seller-stated. Android Auto and Honda Sensing lane-keeping by 2019 EX-L factory fit (inference). EX-L = 1.5T engine (fuel-dilution watch, Sep 28). Market estimate $11,500 for a 140k-mi 2019 EX-L from this sweep&#x27;s Civic band (2019 EX-L dealer asks $15,911; 2021 Sports $9,200–$13,989 at lower miles). Reliability 3 = Sep 28 Civic 1.5T family value.</p></details>
+</article>
+<article class="card" data-price="14900" data-miles="97000" data-model="Honda Civic" data-hybrid="false" data-aa="none" data-meets="false" data-deal="false" data-pref="2" data-discount="-41.9">
+<h3>2016 Honda Civic LX Sedan 4D</h3>
+<p class="price">$14,900 <span class="muted">· 97,000 mi · Baytown, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Preferred 2.0L engine, but LX has no AA and asking is ~42% over market</p>
+<p class="small"><b>Miss / note:</b> Over $12k &amp; over miles • no AA</p>
+<p class="small"><b>Android Auto:</b> No AA by matrix — 2016 Civic LX: AA was EX and above only<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 4/5 · Pref score: 2/10</p>
+<p class="small"><span class='muted'>Market est. $10,500 (-41.9%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Carlos Leyva (dealer-style seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2980510692284094/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">Fails price ($14,900 + TTL/fees, financing pushed) and mileage (97k). 2016 Civic LX = 2.0L (the preferred engine) but the LX has no factory Android Auto (AA was EX-and-above in 2016 — factory-spec inference); backup camera standard (inference). Market estimate $10,500 for a 97k-mi 2016 LX from this sweep&#x27;s Civic band — asking is ~42% above market. Reliability 4 = Sep 28 Civic 2.0L family value.</p></details>
+</article>
+<article class="card" data-price="4000" data-miles="160000" data-model="Hyundai Sonata" data-hybrid="false" data-aa="conditional" data-meets="false" data-deal="true" data-pref="1" data-discount="11.1">
+<h3>2017 Hyundai Sonata Not stated</h3>
+<p class="price">$4,000 <span class="muted">· 160,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II 2.4L: connecting-rod bearing failure risk — verify recalls by VIN, or walk</p>
+<p class="small"><b>Miss / note:</b> 85,000 mi over cap • Theta II engine</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: trim not stated (2017 SE+ with 7″ screen has AA)<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 11.1% below market est. $4,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Kedric Lang (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2548877925574769/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">160k mi — far over cap. Extremely sparse listing (&#x27;160,000miles, AC work&#x27;), trim not stated, no title or feature statements — all feature fields null. Cheap because of miles. 2016–17 Sonata 2.4L Theta II rod-bearing recall caution from Sep 28 research applies to this family — verify by VIN on any Sonata. Market estimate $4,500 for a 160k-mi 2017 Sonata from this sweep&#x27;s band. Reliability 3 = Sep 28 Sonata family value.</p></details>
+</article>
+<article class="card" data-price="4600" data-miles="118000" data-model="Hyundai Elantra" data-hybrid="false" data-aa="conditional" data-meets="false" data-deal="false" data-pref="1" data-discount="8.0">
+<h3>2017 Hyundai Elantra Not stated</h3>
+<p class="price">$4,600 <span class="muted">· 118,000 mi · Tomball, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Rebuilt title — expert rule for Houston: rebuilt = no at this budget</p>
+<p class="small"><b>Miss / note:</b> 43,000 mi over cap • rebuilt title</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: trim/features not stated<br></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='muted'>Market est. $5,000 (8.0%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Wilmary Cubillan (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/4402829523364447/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">118k mi — over cap, and REBUILT title seller-stated in Spanish (&#x27;TÍTULO REBUILT&#x27;). Spanish-language listing, trim and features not stated — all feature fields null. Market estimate $5,000 for a rebuilt 118k-mi 2017 Elantra from this sweep&#x27;s band. Reliability 3 = Sep 28 Elantra family value.</p></details>
+</article>
+<article class="card" data-price="5800" data-miles="160000" data-model="Hyundai Elantra" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="2" data-discount="10.8">
+<h3>2019 Hyundai Elantra Limited Sedan 4D</h3>
+<p class="price">$5,800 <span class="muted">· 160,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> AA/camera by factory fit, but 160k miles is far past the cap</p>
+<p class="small"><b>Miss / note:</b> 85,000 mi over cap</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2019 Elantra Limited (SEL+)<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 2/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 10.8% below market est. $6,500</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Hernández Gonzalez (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1006792822420627/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">160k mi — far over cap. Clean title in hand seller-stated (Spanish). Android Auto and backup camera by 2019 Limited factory fit (inference, not seller-stated). Same seller as the 2018 Optima SX below. Market estimate $6,500 for a 160k-mi 2019 Limited from this sweep&#x27;s Elantra band (2019 SEL 84k mi $8,500; Value Edition 89.5k mi $9,500). Reliability 3 = Sep 28 Elantra family value.</p></details>
+</article>
+<article class="card" data-price="6500" data-miles="152000" data-model="Kia Forte" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="1" data-discount="7.1">
+<h3>2020 Kia Forte GT-Line Sedan 4D</h3>
+<p class="price">$6,500 <span class="muted">· 152,000 mi · Humble, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Check-engine light on + &#x27;blue title&#x27; wording — verify title brand before anything</p>
+<p class="small"><b>Miss / note:</b> 77,000 mi over cap • check-engine light • title to verify</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2020 Forte GT-Line<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3.5/5 · Pref score: 1/10</p>
+<p class="small"><span class='muted'>Market est. $7,000 (7.1%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Giovanni Aguirre (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1536619014634017/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">152k mi — far over cap. Seller states check-engine light on (sensor, per seller) and &#x27;blue title in hand&#x27; — in Texas a clean title is itself blue, so the colour proves nothing: what matters is the brand printed on the title (e.g. &#x27;Rebuilt Salvage&#x27;), not the colour — verify the brand on the physical title. 2020 is outside the 2017–19 target years but recorded as a same-family near miss. Android Auto/camera by 2020 GT-Line factory fit (inference). Market estimate $7,000 for a 152k-mi 2020 GT-Line from this sweep&#x27;s Forte band. Reliability 3.5 = Sep 28 Forte family value.</p></details>
+</article>
+<article class="card" data-price="5200" data-miles="131000" data-model="Kia Optima" data-hybrid="false" data-aa="unverified" data-meets="false" data-deal="true" data-pref="1" data-discount="25.7">
+<h3>2018 Kia Optima SX Sedan 4D</h3>
+<p class="price">$5,200 <span class="muted">· 131,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II engine family: rod-bearing failure — KSDS + oil history or walk</p>
+<p class="small"><b>Miss / note:</b> 56,000 mi over cap • matrix cannot confirm seller AA claim</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: 2018–19 Optima by trim is UNVERIFIED in the expert pass; 7″/8″ UVO screen = likely, small screen = no<br><span class='mismatch'>⚠ Seller/matrix mismatch — trust the matrix, plug-test the car</span></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 25.7% below market est. $7,000</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Hernández Gonzalez (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/908422602137382/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">131k mi — far over cap. Clean title in hand seller-stated (Spanish listing), &#x27;clear history&#x27; on listing, paid off. Android Auto and backup camera by 2018 SX factory fit (inference). Optima is an added plausible sedan per sweep spec (not a Sep 28 candidate). Reliability 3 = grounded estimate, same Hyundai/Kia 2.4L family caution as Sonata (Theta II — verify recalls by VIN); no Sep 28 Optima score exists. Market estimate $7,000 from this sweep&#x27;s Optima band (2018 S 101k mi $6,999; 2019 LX 105k mi $7,500).</p></details>
+</article>
+<article class="card" data-price="3900" data-miles="152084" data-model="Kia Optima" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="true" data-pref="1" data-discount="18.8">
+<h3>2017 Kia Optima EX Sedan 4D</h3>
+<p class="price">$3,900 <span class="muted">· 152,084 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II caution applies</p>
+<p class="small"><b>Miss / note:</b> 77,084 mi over cap</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2017 Optima EX and above have AA<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 18.8% below market est. $4,800</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Pop Vasilio (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/941796698724811/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">152,084 mi — far over cap. Clean title in hand seller-stated, backup camera explicitly seller-stated (twice), 2 owners, paid off, &#x27;clear history&#x27;. Android Auto not seller-stated, but the matrix verifies 2017 Optima EX and above have factory AA. Reliability 3 = grounded estimate (Sonata-family platform; Theta II recall verification applies). Market estimate $4,800 for a 152k-mi 2017 EX from this sweep&#x27;s Optima band.</p></details>
+</article>
+<article class="card" data-price="6999" data-miles="101000" data-model="Kia Optima" data-hybrid="false" data-aa="unverified" data-meets="false" data-deal="true" data-pref="1" data-discount="14.6">
+<h3>2018 Kia Optima S Sedan 4D</h3>
+<p class="price">$6,999 <span class="muted">· 101,000 mi · Katy, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II engine family — engine history matters more than the price</p>
+<p class="small"><b>Miss / note:</b> 26,000 mi over cap • matrix cannot confirm AA claim</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: 2018–19 Optima by trim is UNVERIFIED; check for 7″/8″ UVO screen<br><span class='mismatch'>⚠ Seller/matrix mismatch — trust the matrix, plug-test the car</span></p>
+<p class="small">Reverse camera: Not stated · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 14.6% below market est. $8,200</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Admutebo-Auto Outlets (dealer, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1542819924309296/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">101k mi — 26k over cap. Dealer listing, minimal description, paid off stated, no title statement in text. Android Auto by 2018 Optima S factory fit (inference); camera not stated — null. Reliability 3 = grounded estimate (see SX note). Market estimate $8,200 from this sweep&#x27;s Optima band (2019 S Houston $9,995 at 109k mi dealer; 2019 LX $7,500 at 105k mi).</p></details>
+</article>
+<article class="card" data-price="7500" data-miles="105000" data-model="Kia Optima" data-hybrid="false" data-aa="unverified" data-meets="false" data-deal="true" data-pref="2" data-discount="16.7">
+<h3>2019 Kia Optima LX</h3>
+<p class="price">$7,500 <span class="muted">· 105,000 mi · Katy, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II engine family — verify KSDS/recalls by VIN</p>
+<p class="small"><b>Miss / note:</b> 30,000 mi over cap • matrix cannot confirm AA claim</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: 2018–19 Optima by trim is UNVERIFIED; check for 7″/8″ UVO screen<br><span class='mismatch'>⚠ Seller/matrix mismatch — trust the matrix, plug-test the car</span></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 2/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 16.7% below market est. $9,000</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Jim Jimenez (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2183952778824431/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">105k mi — 30k over cap. Clean title seller-stated, minimal description. Android Auto and backup camera by 2019 LX factory fit (inference). Reliability 3 = grounded estimate (see SX note). Market estimate $9,000 from this sweep&#x27;s Optima band.</p></details>
+</article>
+<article class="card" data-price="9995" data-miles="109000" data-model="Kia Optima" data-hybrid="false" data-aa="unverified" data-meets="false" data-deal="false" data-pref="2" data-discount="2.0">
+<h3>2019 Kia Optima S</h3>
+<p class="price">$9,995 <span class="muted">· 109,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Theta II + seller does not claim AA — do not assume the S trim pairs both</p>
+<p class="small"><b>Miss / note:</b> 34,000 mi over cap • AA unconfirmed</p>
+<p class="small"><b>Android Auto:</b> AA unverified — check in person: seller states CarPlay only, NOT Android Auto<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 2/10</p>
+<p class="small"><span class='muted'>Market est. $10,200 (2.0%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Shayan Shaker (dealer-style seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/2517525425324931/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">109k mi — 34k over cap. Backup camera seller-stated; seller states Apple CarPlay but NOT Android Auto, so Android Auto is null (never invent — the S trim normally pairs both, verify on the car). &#x27;Clear history&#x27; on listing, financing pushed. Reliability 3 = grounded estimate (see SX note). Market estimate $10,200 from this sweep&#x27;s Optima band — asking is at market, not a deal.</p></details>
+</article>
+<article class="card" data-price="8997" data-miles="135000" data-model="Mazda Mazda6" data-hybrid="false" data-aa="none" data-meets="false" data-deal="false" data-pref="1" data-discount="5.3">
+<h3>2017 Mazda Mazda6 Grand Touring</h3>
+<p class="price">$8,997 <span class="muted">· 135,000 mi · Houston, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Reliable car, fails AA unless a genuine Mazda retrofit was fitted — ask for the receipt</p>
+<p class="small"><b>Miss / note:</b> 60,000 mi over cap • no factory AA</p>
+<p class="small"><b>Android Auto:</b> No AA as sold — 2017 Mazda6 had no factory AA (dealer retrofit only, receipt + plug test required)<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 4/5 · Pref score: 1/10</p>
+<p class="small"><span class='muted'>Market est. $9,500 (5.3%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Ali Aghdam / CARSNEEDO LLC, Houston TX (dealer, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1127688119734943/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">135k mi — far over cap. Clean title in hand seller-stated, paid off, backup camera seller-stated, leather/sunroof/Bose. Android Auto FALSE: the 2017 Mazda6 had no factory Android Auto (Mazda added it later / by retrofit) — fails that must-have regardless of miles. Mazda6 is an added plausible sedan per sweep spec. Reliability 4 = grounded estimate (no Sep 28 Mazda6 score; family reputation is strong). Market estimate $9,500 for a 135k-mi 2017 Grand Touring from this sweep&#x27;s Mazda6 band (other 2018 Grand Tourings asked $14,000–$20,000).</p></details>
+</article>
+<article class="card" data-price="6000" data-miles="157934" data-model="Chevrolet Malibu" data-hybrid="false" data-aa="confirmed" data-meets="false" data-deal="false" data-pref="1" data-discount="-9.1">
+<h3>2018 Chevrolet Malibu LT</h3>
+<p class="price">$6,000 <span class="muted">· 157,934 mi · Katy, TX</span></p>
+<p>  <span class="tag badge-avoid">AVOID</span></p>
+<p class="small"><b>Why:</b> Seller states title is not clean, plus 1.5T needs program/oil proof — pass</p>
+<p class="small"><b>Miss / note:</b> 82,934 mi over cap • title not clean • price differs in listing ($6,000 vs $7,000)</p>
+<p class="small"><b>Android Auto:</b> AA confirmed by matrix — 2018 Malibu LT (LS and above, MyLink)<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3/5 · Pref score: 1/10</p>
+<p class="small"><span class='muted'>Market est. $5,500 (-9.1%)</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Soundiat Keita (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/4343137285948598/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">157,934 mi — far over cap, and seller states &#x27;Title is not clean&#x27;. Price mismatch in listing itself: $6,000 headline vs $7,000 in description. Android Auto and backup camera by 2018 Malibu LT factory fit (inference). Malibu is an added plausible sedan per sweep spec. Reliability 3 = grounded estimate (no Sep 28 Malibu score). Market estimate $5,500 reflects miles + non-clean title from this sweep&#x27;s Malibu band (2018 LT Houston $12,800 dealer ask).</p></details>
+</article>
+<article class="card" data-price="5500" data-miles="149000" data-model="Subaru Legacy" data-hybrid="false" data-aa="none" data-meets="false" data-deal="true" data-pref="1" data-discount="21.4">
+<h3>2017 Subaru Legacy 2.5i Limited Sedan 4D</h3>
+<p class="price">$5,500 <span class="muted">· 149,000 mi · Katy, TX</span></p>
+<p>  <span class="tag badge-caution">CAUTION</span></p>
+<p class="small"><b>Why:</b> Clean title and new tyres, but no AA in 2017 and far over miles</p>
+<p class="small"><b>Miss / note:</b> 74,000 mi over cap • no AA</p>
+<p class="small"><b>Android Auto:</b> No AA by matrix — 2017 Legacy: AA starts 2018 on all trims<br></p>
+<p class="small">Reverse camera: Yes · Lane assist: Not stated · Reliability: 3.5/5 · Pref score: 1/10</p>
+<p class="small"><span class='deal'>★ Underpriced — 21.4% below market est. $7,000</span><br><span class="muted">Market basis: comparable Marketplace asking prices seen in the Oct 26 sweep.</span></p>
+<p class="small muted">Seller: Mohamed Elshazly (private seller, Facebook Marketplace)</p>
+<p><a href="https://www.facebook.com/marketplace/item/1083589847587489/" target="_blank" rel="noopener">View on Facebook Marketplace →</a></p>
+<details><summary>Full sweep notes</summary><p class="small">149k mi — far over cap. Clean title seller-stated, &#x27;clear history&#x27;, new Michelin tires and battery. Android Auto FALSE: 2017 Legacy has no factory Android Auto (Subaru added it for 2018+) — fails that must-have regardless of miles. Backup camera by 2017 factory standard (inference). Legacy is an added plausible sedan per sweep spec. Reliability 3.5 = grounded estimate (no Sep 28 Legacy score). Market estimate $7,000 from this sweep&#x27;s Legacy band (2018 Legacy Houston $11,290; 2019 Legacy Katy $12,000).</p></details>
+</article></div>
+</div>
+
+<div id="view-faq" hidden>
+<section class="help"><h2>FAQ &amp; Help</h2>
+<h3>Which cars should I pursue?</h3>
+<ul>
+<li><b>2019 Ford Fusion Hybrid SE</b> — first choice. Proven hybrid system, AA standard, safety kit standard. Regular Hybrid only — never the Energi plug-in.</li>
+<li><b>2017–18 Fusion Hybrid SE / Fusion 2.5L SE with the 8-inch SYNC 3 screen</b> — same idea, older. Small 4.2-inch screen = no AA, ever.</li>
+<li><b>2016–17 Honda Accord EX/EX-L, 2.4L</b> and <b>Honda Civic Sedan 2.0L — 2016–18 EX and above; 2019 Sport (the only 2019 2.0L with Android Auto)</b> — avoid 2019 Civic EX and above — that is the 1.5T. Test the Civic’s A/C hard; Honda extended the condenser warranty on some 2016–17 Civics.</li>
+<li><b>2019 Kia Forte (any trim)</b> and <b>2018 Hyundai Elantra SEL</b> — value picks. A 2019 Elantra needs proof the piston-ring recall (21V-301) was done.</li>
+<li><b>2018–19 Subaru Legacy Premium, late-2018/2019 Mazda6 Touring (non-turbo), 2017–19 Chevy Impala LT V6, 2020 Toyota Camry</b> — alternatives, each with one named check in the Research doc.</li></ul>
+<h3>Which should I avoid?</h3>
+<ul>
+<li><b>Ford Fusion 1.5L EcoBoost</b> — coolant can leak into the cylinders; engine replacement can cost $3,500–$8,000.</li>
+<li><b>Honda 1.5T (Accord/Civic 2016–20)</b> — oil dilution: fuel thins the oil, especially on short trips.</li>
+<li><b>Hyundai Sonata / Kia Optima 2.4L &amp; 2.0T “Theta II”</b> — connecting-rod bearing failure, knock, seizure, fire risk. Any knock or patchy oil history: walk.</li>
+<li><b>Nissan Altima 2013–18, Ford Focus/Fiesta automatics</b> — CVT / PowerShift dual-clutch failures. Fusion never had PowerShift — do not confuse them.</li>
+<li><b>Plug-in hybrids in this budget (Fusion Energi, Sonata Plug-in)</b> — aged big batteries and a Fusion Energi fire recall (do-not-charge).</li>
+<li><b>Any rebuilt / salvage / flood title, any seller who refuses an inspection</b> — in Houston, that rule alone saves most bad buys.</li></ul>
+<p class="small">Jargon in one line: <b>Trim</b> = version of the same car (LX basic, EX mid, Touring high). <b>CVT</b> = automatic with a belt instead of fixed gears. Hybrid <b>eCVT</b> is a different, simpler, stronger device — not a belt CVT. <b>PPI</b> = pre-purchase inspection by your own mechanic.</p>
+<p class="small">More jargon: <b>KSDS</b> = Hyundai/Kia knock-sensor software that detects engine knock and limps the car — a warning system, not a repair. <b>UVO</b> = Kia's infotainment system. <b>MyLink</b> = Chevrolet's infotainment system. <b>Display Audio</b> = Honda's touchscreen system.</p>
+
+<h3>Android Auto by year &amp; trim — expert matrix (condensed)</h3>
+<p class="small">Every car here is wired Android Auto (plug in a good data cable) unless proven otherwise. The 60-second plug test with your own phone beats any table. Cells the expert could not verify say so — treat them as “unverified — check in person.”</p>
+<table><tr><th>Model</th><th>Factory Android Auto</th><th>Connection</th></tr><tr><td><b>Ford Fusion / Hybrid</b></td><td>2017–20 with SYNC 3 (8″) only. 2019–20: SE+ standard. S: only if that car has the 8″ screen.</td><td>Wired</td></tr><tr><td><b>Honda Accord</b></td><td>2016–17: EX+. 2018–20: Sport/EX/EX-L/Touring. LX: never in these years.</td><td>Wired</td></tr><tr><td><b>Honda Accord Hybrid</b></td><td>2017: EX-L/Touring only. 2018+: all hybrid trims.</td><td>Wired</td></tr><tr><td><b>Honda Civic sedan</b></td><td>2016–18: EX+. 2019–20: Sport and above (LX: no AA — 5-inch screen, Bluetooth only).</td><td>Wired</td></tr><tr><td><b>Hyundai Sonata</b></td><td>2015–16: Nav/Display Audio + free update must be installed. 2017–19: SE+ with 7″ screen.</td><td>Wired</td></tr><tr><td><b>Hyundai Sonata Hybrid</b></td><td>2016: Nav + update. 2017–19: all hybrid trims.</td><td>Wired</td></tr><tr><td><b>Hyundai Elantra</b></td><td>2017–20: SEL+ . SE small-screen = no (package cars: verify).</td><td>Wired</td></tr><tr><td><b>Kia Forte</b></td><td>2017–18: S/EX (LX: no). 2019–20: all trims standard.</td><td>Wired</td></tr><tr><td><b>Kia Optima</b></td><td>2015–16: Nav/UVO3 + update installed. 2017 EX+ verified; 2017 LX & 2018–19 by trim: unverified — check in person.</td><td>Wired</td></tr><tr><td><b>Kia Optima Hybrid</b></td><td>2017: standard. 2015–16: update-eligible only. 2018–19: unverified — check in person.</td><td>Wired</td></tr><tr><td><b>Toyota Camry</b></td><td>2018: none. 2019: CarPlay only. 2020+: all trims.</td><td>Wired</td></tr><tr><td><b>Toyota Corolla sedan</b></td><td>2020 sedan: NO AA (CarPlay only). 2021+: all trims. (2020 hatchback differs — excluded here.)</td><td>Wired</td></tr><tr><td><b>Mazda6</b></td><td>2018: Touring+ only (dealer upgrade / Nov 2018+ factory); Sport: no. 2019+: Touring+. Older: retrofit only.</td><td>Wired</td></tr><tr><td><b>Nissan Altima</b></td><td>2013–18: none. 2019+: all trims.</td><td>Wired</td></tr><tr><td><b>Subaru Legacy</b></td><td>2015–17: none. 2018+: all trims incl. base.</td><td>Wired</td></tr><tr><td><b>Chevrolet Malibu</b></td><td>2016: MyLink (7″ from launch; 8″ after Mar 2016 update); L: no. 2017–20: LS+.</td><td>Wired</td></tr><tr><td><b>Chevrolet Impala</b></td><td>2016: 8″ MyLink after update only; LS 4.2-inch: no AA (unverified — check in person). 2017–20: LT/Premier 8″.</td><td>Wired</td></tr><tr><td><b>VW Jetta / Passat</b></td><td>5″ screen = no AA. 6.3″/6.5″ Composition Media = AA. 2019 Jetta / 2019+ Passat: all trims (verify base S).</td><td>Wired</td></tr></table>
+<p class="small"><b>Key corrections:</b> Corolla <i>sedan</i> AA is 2021+ (2020 sedan is CarPlay only). 2019 Fusion S: AA only with the 8″ SYNC 3 screen. Mazda6: 2018 Touring+ upgrade, Sport excluded. “Eligible ≠ installed” for 2016 Chevy 8″ MyLink and 2015–16 Hyundai/Kia update cars.</p>
+
+<h3>Check a VIN — in this order</h3>
+<ol>
+<li><b><a href="https://www.nhtsa.gov/vin-decoder" target="_blank" rel="noopener">NHTSA VIN Decoder</a> (free)</b> — proves the VIN matches the year/make/model/engine in the ad. Proves nothing about condition or history.</li>
+<li><b><a href="https://www.nhtsa.gov/recalls" target="_blank" rel="noopener">NHTSA Recalls</a> (free)</b> — proves which safety recalls are still open on that exact car. Does not show completed recalls — get a dealer printout for those.</li>
+<li><b><a href="https://www.nicb.org/vincheck" target="_blank" rel="noopener">NICB VINCheck</a> (free, 5/day)</b> — proves an insurer reported it stolen or totalled. A clean result does NOT guarantee a clean car.</li>
+<li><b><a href="https://vehiclehistory.gov" target="_blank" rel="noopener">NMVTIS via TxDMV Title Check</a> (~$10–20)</b> — title brands from any state (Salvage, Rebuilt, Flood, odometer brands). This is the title-washing detector. Start at <a href="https://www.txdmv.gov" target="_blank" rel="noopener">txdmv.gov</a>, search “Title Check.”</li>
+<li><b><a href="https://www.carfax.com" target="_blank" rel="noopener">Carfax</a> (~$45–50) or <a href="https://www.autocheck.com" target="_blank" rel="noopener">AutoCheck</a> (~$25–30)</b> — paid history for a finalist only. Carfax is stronger on service detail; AutoCheck on auctions. Neither proves anything that was never reported — believe a bad inspection over a clean report.</li>
+<li><b>In person (free, non-negotiable)</b> — VIN plate (windshield) = door sticker = title, and the seller’s photo ID name = name on the title. Any mismatch: stop.</li></ol>
+
+<h3>Pre-purchase inspection checklist ($100–$150, your mechanic, not the seller’s)</h3>
+<ul>
+<li>Full scan of all modules; hybrid battery cell voltages on hybrids; watch for cleared codes (incomplete readiness monitors).</li>
+<li>Cold start observed — never accept a pre-warmed car. Listen for knock/rattle; watch smoke.</li>
+<li>Oil &amp; coolant check: over-full oil smelling of fuel (dilution), glitter/metal in oil (bearing wear), coolant pressure test.</li>
+<li>On a lift: crash/flood signs, frame rails, paint thickness, suspension, leaks, tyre dates — all four tyres matching on AWD cars.</li>
+<li>Houston flood protocol, every car: silt under carpets / spare-tyre well, rusty seat rails and under-dash metal, musty smell, fogged lamps.</li>
+<li>A/C torture test: max cold 10 minutes, vent temperature measured — critical on Civics.</li>
+<li>Road test: CVT judder on gentle take-off, low-speed shudder, highway merge, straight braking, whine with radio off.</li>
+<li>Your phone + cable: Android Auto launch, reverse camera, every screen function (watch a parked Mazda screen 60 seconds for “ghost touch”).</li>
+<li>Written list of what is due now — add it to the price before negotiating. Walk away for: frame repair, flood evidence, metal in fluids, bad hybrid cell spread, title/odometer mismatch.</li></ul>
+
+<h3>Marketplace scam red flags</h3>
+<ul>
+<li><b>Curbstoner:</b> “private seller” with many cars sold, meets in a parking lot, cannot say how long they owned it.</li>
+<li><b>Title jumping:</b> title in a stranger’s name, blank buyer line, “saves you tax.” ID must match title — no match, no money.</li>
+<li><b>Washed salvage:</b> 25–40% under market, fresh out-of-state title, “clean blue title!” — run NICB + NMVTIS before travelling. Note: in Texas a clean title is itself blue — what matters is the brand printed on the title (e.g. “Rebuilt Salvage”), not the colour, so verify the brand on the physical title.</li>
+<li><b>Bait listing:</b> stock photos, no Texas plate, pushed off-platform, deployment/divorce/shipping story.</li>
+<li><b>Deposit scam:</b> never send Zelle/Cash App/Venmo to hold a car you have not stood next to.</li>
+<li><b>Odometer games:</b> worn pedals/seats at “low” miles, readings going backwards in the history report.</li>
+<li><b>“Just needs a sensor / a recharge”:</b> price it as the full repair until your inspection proves otherwise.</li>
+<li>Meet in daylight, public/camera-covered place, bring a second person, finish money + title at a bank or county tax office.</li></ul>
+</section></div>
+</main>
+<footer>Built from the Oct 26, 2026 Facebook Marketplace sweep + expert guide (2026-10-26). Research only — no seller was contacted. Full detail: docs/FAQ.md, docs/RESEARCH.md, docs/METHOD.md in this repo.</footer>
+<script>
+function showTab(t){document.getElementById('view-list').hidden=t!=='list';document.getElementById('view-faq').hidden=t!=='faq';document.getElementById('tabList').classList.toggle('active',t==='list');document.getElementById('tabFaq').classList.toggle('active',t==='faq');}
+var grid=document.getElementById('grid');
+function apply(){
+ var mp=parseFloat(document.getElementById('fPrice').value)||Infinity, mm=parseFloat(document.getElementById('fMiles').value)||Infinity, mo=document.getElementById('fModel').value;
+ var hy=document.getElementById('fHybrid').checked, aa=document.getElementById('fAA').checked, me=document.getElementById('fMeets').checked, de=document.getElementById('fDeal').checked;
+ var cards=[].slice.call(grid.children);
+ cards.forEach(function(c){var d=c.dataset; var ok=(+d.price<=mp)&&(+d.miles<=mm)&&(!mo||d.model===mo)&&(!hy||d.hybrid==='true')&&(!aa||d.aa==='confirmed')&&(!me||d.meets==='true')&&(!de||d.deal==='true'); c.style.display=ok?'':'none';});
+ var s=document.getElementById('fSort').value;
+ cards.sort(function(a,b){if(s==='price')return a.dataset.price-b.dataset.price; if(s==='miles')return a.dataset.miles-b.dataset.miles; if(s==='discount')return b.dataset.discount-a.dataset.discount; if(s==='pref')return b.dataset.pref-a.dataset.pref; return (b.dataset.pref-a.dataset.pref)||(b.dataset.discount-a.dataset.discount);}); cards.forEach(function(c){grid.appendChild(c)});
+ var n=cards.filter(function(c){return c.style.display!=='none'}).length;
+ document.getElementById('count').textContent='Showing '+n+' of 32 listings';
+}
+['fPrice','fMiles','fModel','fSort','fHybrid','fAA','fMeets','fDeal'].forEach(function(id){document.getElementById(id).addEventListener('input',apply);document.getElementById(id).addEventListener('change',apply);});
+apply();
+</script></body></html>
