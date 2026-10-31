@@ -1,6 +1,6 @@
 # CarHunt — Reliable Car Under $12K Dashboard
 
-Ayaan Pathan's used-car search dashboard: a filterable, single-file board of Houston-area sedan listings, with an expert pursue/avoid workup, an Android Auto by year/trim matrix, and a VIN / inspection / scam guide.
+Ayaan Pathan's used-car search dashboard: a filterable, single-file board of Houston-area listings, with an expert pursue/avoid workup, an Android Auto by year/trim matrix, and a VIN / inspection / scam guide. Every deal is graded A+ to F against a market value estimate. Updated every Thursday, with daily incremental sweeps.
 
 **Live:** https://ayaan40000.github.io/CarHunt/
 
@@ -8,12 +8,13 @@ Ayaan Pathan's used-car search dashboard: a filterable, single-file board of Hou
 
 ## Owner's criteria
 
-- Under $12,000 cash, no financing
-- Sedan only — no trucks, no compact hatchbacks
-- At most 75,000 miles
+- Under $12,000 cash, no financing (private / non-dealer sellers preferred)
+- Any car type — no trucks, no compact hatchbacks
+- At most 100,000 miles
 - Must have: factory Android Auto, reverse camera
-- Preferred: hybrid, lane assist
-- Reliability first; every model reliability cross-checked
+- Preferred: gas, hybrid — Not preferred: diesel, electric, manual transmission
+- Reliability first; every model reliability cross-checked; models with reliability concerns or major recalls are excluded
+- Every deal graded A+ to F (A+ = great deal at a great price) against a CarMax / leading-provider value estimate — target is below estimated value
 
 Honest headline for the Oct 26 sweep: **only 1 of 32 listings meets all must-haves** — the 2019 Kia Forte FE, Spring TX, $7,000, 44,500 mi (manual transmission, flagged on its card). The Sep 28, 2026 listings were not re-verified and are presumed sold, so they are not included.
 
